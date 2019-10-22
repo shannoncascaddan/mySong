@@ -1,0 +1,55 @@
+public class songDriver
+{
+    public static void main(String [] args)
+    {
+        //1. create a song
+        Song someSong = new Song();
+        Song firework = new Song("Firework", "Katy Perry", true, 234, 6.94);
+        Song deadLochs = new Song("Deadlochs", "Blue Face", true, 150, 3.57);
+        Song overature = new Song("1812 Overature", "Petyr Ilych Tchaicovsky", false, 1093,11.11);
+        Song things = new Song("things","ME",true);
+        Song things2 = new Song("things","ME",true);
+        Song things3 = things;
+
+
+        if (things.compareTo(firework) ==0)
+        {
+            System.out.println("They are the same");
+        }//end if
+        else
+        {
+            System.out.println("They are not the same");
+        }
+        System.out.println("There are " + Song.getCount() + " songs");
+        //System.out.println(firework);
+
+        //System.out.println("In min: "+overature.toMinSec());
+        //4 test setters
+//        System.out.println(thigns);
+//        System.out.println(someSong);
+//        someSong.setTitle("stuff");
+//        someSong.setArtist("Singer");
+//        someSong.setHasLyrics(true);
+//        someSong.setLength(647383);
+//        someSong.setFileSize(9.8);
+//        System.out.println();
+//        System.out.println(someSong);
+
+       //3. test getters
+//        System.out.println(firework.getTitle());
+//        System.out.println(firework.getArtist());
+//        System.out.println(overature.getHasLyrics());
+//        System.out.println(deadLochs.getLength());
+//        System.out.println(overature.getFileSize());
+
+        //2. print it out
+//        System.out.println(firework);
+//        System.out.println();
+//        System.out.println(deadLochs);
+//        System.out.println();
+//        System.out.println(overature);
+
+
+
+    }//end main method
+}//end class songDriver. this is where all the fun stuff happens
